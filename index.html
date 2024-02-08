@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Engineering Awareness</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #ffffff;
+      color: #040404;
+      text-align: center;
+      padding: 1em 0;
+      height: 200px;
+    }
+    .jumbotron{
+      background-image: url(./images/spying_on_you.jpg);
+      background-repeat: no-repeat
+    }
+
+    nav {
+      background-color: #444;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: #fff;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      color: #333;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    .intro {
+      text-align: center;
+    }
+
+    .intro img {
+      max-width: 100%;
+      height: auto;
+    }
+    .hide{
+      visibility: hidden;
+    }
+  </style>
+</head>
+<body>
+  <header class='jumbotron'>
+    <div>
+      <h1>Social Engineering Awareness</h1>
+      <p>Guarding Against Social Engineering Threats</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#" id='intro' onclick='reloadStart()'>Introduction</a>
+    <a href="#" id='phishing' onclick='phishingClick()'>Phishing</a>
+    <a href="#" id='faker' onclick='fakerClick()'>Water Hole</a>
+    <a href="#" id='pretext'>Pretexting</a>
+    <a href="#" id='prevention'>Prevention</a>
+    <a href="#" id='reporting'>Reporting</a>
+  </nav>
+
+  <section id="container" class="intro">
+  <div id='start'><img src="images/social-engineering-concept-icons-phishing-260nw-2083725586.webp" alt="Social Engineering">
+  <h2>Understanding Social Engineering: The Art of Deception</h2>
+  <p>One of the biggest weaknesses in any organization’s cybersecurity strategy is human error. Social engineering attacks take advantage of this vulnerability by conning unsuspecting people into compromising security and giving out sensitive information. Social engineers use various psychological hacks to trick you into trusting them or create a false sense of urgency and anxiety to lower your natural defenses. Attackers can then breach your physical or technological security to steal money or confidential information.
+
+The only way to prevent being targeted by social engineering is to study the methods, psychological triggers, and technological tools these attackers use. Scammers use many different types of social engineering attacks, but some common giveaways can help you spot and avoid them.</p>
+<button id='previous' class='hide' onclick=''>Previous Topic</button>    
+<button id='next' onclick='phishingClick()'>Next Topic</button>
+  </div>
+
+  </section>
+
+
+
+</body>
+<script src='index.js'></script>
+</html>
